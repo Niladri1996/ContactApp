@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_titlebar"
+            android:background="#008CFF"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contacts"
+                android:layout_centerVertical="true"
+                android:textSize="18sp"
+                android:layout_marginLeft="12dp"
+                android:textColor="@color/white"></TextView>
+
+            <ImageView
+                android:id="@+id/img_search"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_baseline_search_24"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp">
+
+            </ImageView>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_editbar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:visibility="gone"
+            >
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="30dp"
+               android:layout_height="30dp"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"></ImageView>
+
+            <EditText
+                android:id="@+id/ed_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/img_back"
+                android:hint="FIND CONTACTS"
+                android:layout_marginLeft="12dp"
+                android:background="@null">
+
+            </EditText>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
